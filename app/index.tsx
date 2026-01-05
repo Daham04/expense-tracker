@@ -26,15 +26,12 @@ export default function HomePage() {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        {/* Logo and Titles */}
         <Image
           style={styles.logo}
           source={require("../assets/project-images/finflow.png")}
         />
         <Text style={styles.title}>Welcome Back</Text>
         <Text style={styles.subtitle}>Sign in to continue</Text>
-
-        {/* Input Fields */}
         <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.inputField}
@@ -48,8 +45,6 @@ export default function HomePage() {
           placeholderTextColor="#999"
           secureTextEntry={true}
         />
-
-        {/* Forgot Password and Sign In Button */}
         <Pressable style={styles.forgot}>
           <Text style={styles.forgotText}>Forgot Password ?</Text>
         </Pressable>
@@ -64,7 +59,6 @@ export default function HomePage() {
           </LinearGradient>
         </Pressable>
 
-        {/* Sign Up Section */}
         <View style={styles.view1}>
           <Text style={styles.Text1}>Don't have an account?</Text>
           <Pressable>
