@@ -50,6 +50,10 @@ export const homeStyles = StyleSheet.create({
     width: 30,
     height: 30,
   },
+  image3: {
+    width: 25,
+    height: 25,
+  },
   balanceCard: {
     borderRadius: 20,
     marginHorizontal: H_PADDING,
@@ -89,6 +93,8 @@ export const homeStyles = StyleSheet.create({
     flexDirection: "row",
     marginHorizontal: H_PADDING,
     marginVertical: 10,
+    justifyContent: "space-around",
+    alignItems: "center",
   },
   view9: {
     flex: 1,
@@ -117,5 +123,25 @@ export const homeStyles = StyleSheet.create({
     fontFamily: "PoppinsBold",
     fontSize: 16,
     color: "#000000ff",
+  },
+  topText8: {
+    fontFamily: "PoppinsBold",
+    fontSize: 14,
+    color: "#000000ff",
+    marginLeft: 15,
+    marginTop: 10,
+  },
+  bottomNavBar:{
+    height: 60,
+    backgroundColor: "#f7f7ed",
+    borderWidth: 1,
+    borderColor: "#5693adff",
+    marginHorizontal: H_PADDING,
+    marginTop: 10,
+    borderRadius: 30,
+    marginBottom: 10,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
 });
