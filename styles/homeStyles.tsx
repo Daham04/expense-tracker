@@ -9,7 +9,7 @@ export const homeStyles = StyleSheet.create({
   topMainView: {
     flexDirection: "row",
     marginHorizontal: H_PADDING,
-    marginVertical: 10,
+    marginTop: 10,
   },
   topView1: {
     flex: 1,
@@ -54,6 +54,18 @@ export const homeStyles = StyleSheet.create({
     width: 25,
     height: 25,
   },
+  image4: {
+    width: 40,
+    height: 40,
+    marginRight: 10,
+    alignSelf: "center",
+  },
+  image5: {
+    width: 35,
+    height: 35,
+    marginRight: 10,
+    alignSelf: "center",
+  },
   balanceCard: {
     borderRadius: 20,
     marginHorizontal: H_PADDING,
@@ -93,8 +105,7 @@ export const homeStyles = StyleSheet.create({
     flexDirection: "row",
     marginHorizontal: H_PADDING,
     marginVertical: 10,
-    justifyContent: "space-around",
-    alignItems: "center",
+    gap: 10,
   },
   view9: {
     flex: 1,
@@ -114,6 +125,35 @@ export const homeStyles = StyleSheet.create({
     marginRight: 5,
     backgroundColor: "#f4eef5ff",
   },
+  view11: {
+    flex: 1,
+    flexDirection: "row",
+    borderColor: "rgb(173, 142, 86)",
+    borderWidth: 1,
+    borderRadius: 15,
+    padding: 15,
+    backgroundColor: "rgb(243, 240, 229)",
+  },
+  view12: {
+    flex: 1,
+    flexDirection: "row",
+    borderColor: "rgb(253, 162, 162)",
+    borderWidth: 1,
+    borderRadius: 15,
+    padding: 15,
+    backgroundColor: "rgb(255, 241, 238)",
+  },
+  view13: {
+    flex: 1,
+  },
+  view14: {
+    flex: 3,
+  },
+  cardView: {
+    flexDirection: "row",
+    marginHorizontal: H_PADDING,
+    gap: 10,
+  },
   topText6: {
     fontFamily: "PoppinsRegular",
     fontSize: 14,
@@ -131,7 +171,7 @@ export const homeStyles = StyleSheet.create({
     marginLeft: 15,
     marginTop: 10,
   },
-  bottomNavBar:{
+  bottomNavBar: {
     height: 60,
     backgroundColor: "#f7f7ed",
     borderWidth: 1,

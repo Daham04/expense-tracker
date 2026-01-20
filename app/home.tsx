@@ -1,7 +1,6 @@
 import { authStyles } from "@/styles/authStyles";
 import { homeStyles } from "@/styles/homeStyles";
 import { LinearGradient } from "expo-linear-gradient";
-import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import {
   Animated,
@@ -106,11 +105,6 @@ export default function HomePage() {
           </View>
         </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ paddingHorizontal: 16 }}
-        ></ScrollView>
         <View>
           <Text style={homeStyles.topText8}>Monthly Spending</Text>
           <BarChart
@@ -126,39 +120,64 @@ export default function HomePage() {
               backgroundGradientFrom: "#ffffff",
               backgroundGradientTo: "#ffffff",
               decimalPlaces: 0,
-              color: (opacity = 1) => `rgba(175, 86, 179, ${opacity})`,
+              color: (opacity = 1) => `rgba(43, 107, 163, ${opacity})`,
               labelColor: () => "#333",
             }}
             style={{
               marginVertical: 3,
               borderRadius: 16,
               alignSelf: "center",
-              borderColor: "rgb(241, 221, 245)",
+              borderColor: "rgb(174, 203, 229)",
               borderWidth: 1,
             }}
           />
         </View>
 
         <View style={homeStyles.view8}>
-          <Pressable style={authStyles.signInButton}>
+          <View style={homeStyles.view11}>
+            <View style={homeStyles.view13}>
+              <Image
+                source={require("../assets/project-images/badge.png")}
+                style={homeStyles.image4}
+              />
+            </View>
+            <View style={homeStyles.view14}>
+              <Text style={homeStyles.topText6}>Top Category</Text>
+              <Text style={homeStyles.topText7}>Shopping</Text>
+              <Text style={homeStyles.topText6}>Rs. 3,000.00</Text>
+            </View>
+          </View>
+
+          <View style={homeStyles.view12}>
+            <View style={homeStyles.view13}>
+              <Image
+                source={require("../assets/project-images/moneybag.png")}
+                style={homeStyles.image5}
+              />
+            </View>
+            <View style={homeStyles.view14}>
+              <Text style={homeStyles.topText6}>Expenses</Text>
+              <Text style={homeStyles.topText7}>30</Text>
+              <Text style={homeStyles.topText6}>This month</Text>
+            </View>
+          </View>
+        </View>
+
+        <View style={homeStyles.cardView}>
+          <Pressable style={authStyles.btn}>
             <LinearGradient
               colors={["#3291B6", "#913b94"]}
-              style={authStyles.gradient}
+              style={authStyles.btnInner}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
             >
-              <Text style={authStyles.signInButtonText}>Sign Up</Text>
+              <Text style={authStyles.signInButtonText}>+ Add Expenses</Text>
             </LinearGradient>
           </Pressable>
-          <Pressable style={authStyles.signInButton}>
-            <LinearGradient
-              colors={["#3291B6", "#913b94"]}
-              style={authStyles.gradient}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-            >
-              <Text style={authStyles.signInButtonText}>Add Expenses</Text>
-            </LinearGradient>
+          <Pressable style={authStyles.btn}>
+            <View style={[authStyles.btnInner, authStyles.outlineBtn]}>
+              <Text style={authStyles.btnText}>Analytics</Text>
+            </View>
           </Pressable>
         </View>
       </ScrollView>

@@ -65,14 +65,36 @@ export const authStyles = StyleSheet.create({
     marginTop: 20,
   },
 
-  gradient: {
+  btn: {
+    flex: 1,
+  },
+
+  btnInner: {
+    paddingVertical: 12,
     borderRadius: 18,
-    padding: 12,
     alignItems: "center",
+    justifyContent: "center",
+  },
+
+  outlineBtn: {
+    borderWidth: 1,
+    borderColor: "#3291B6",
+  },
+
+  gradient: { 
+    borderRadius: 18, 
+    padding: 12, 
+    alignItems: "center" 
   },
 
   signInButtonText: {
     color: "#fff",
+    fontFamily: "PoppinsBold",
+    fontSize: 16,
+  },
+
+  btnText: {
+    color: "#3291B6",
     fontFamily: "PoppinsBold",
     fontSize: 16,
   },
@@ -95,7 +117,7 @@ export const authStyles = StyleSheet.create({
     color: "#3291B6",
   },
   formContainer: {
-  maxHeight: 400, 
-  //marginTop: 10,
-},
+    maxHeight: 400,
+    //marginTop: 10,
+  },
 });
