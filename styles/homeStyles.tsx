@@ -66,6 +66,10 @@ export const homeStyles = StyleSheet.create({
     marginRight: 10,
     alignSelf: "center",
   },
+  image6: {
+    width: 35,
+    height: 35,
+  },
   balanceCard: {
     borderRadius: 20,
     marginHorizontal: H_PADDING,
@@ -153,6 +157,7 @@ export const homeStyles = StyleSheet.create({
     flexDirection: "row",
     marginHorizontal: H_PADDING,
     gap: 10,
+    marginBottom: 5,
   },
   topText6: {
     fontFamily: "PoppinsRegular",
@@ -183,5 +188,42 @@ export const homeStyles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
+  },
+  itemCard: {
+    flexDirection: "row",
+    marginHorizontal: H_PADDING,
+    marginVertical: 5,
+    borderColor: "rgb(194, 190, 183)",
+    borderWidth: 1,
+    borderRadius: 15,
+  },
+  itemCard1: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  itemCard2: {
+    flex: 4,
+    padding: 10,
+  },
+  itemCard3: {
+    flex: 3,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  itemCardText1: {
+    fontFamily: "PoppinsBold",
+    fontSize: 14,
+    color: "#000000ff",
+  },
+  itemCardText2: {
+    fontFamily: "PoppinsRegular",
+    fontSize: 12,
+    color: "#000000ff",
+  },
+  itemCardText3: {
+    fontFamily: "PoppinsBold",
+    fontSize: 16,
+    color: "rgb(204, 78, 78)",
   },
 });

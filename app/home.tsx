@@ -180,6 +180,120 @@ export default function HomePage() {
             </View>
           </Pressable>
         </View>
+
+        <Text style={homeStyles.topText8}>Recently Added</Text>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/fastfood.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Grocery Shopping</Text>
+            <Text style={homeStyles.itemCardText2}>Foods</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 3500.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/graduation.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Books</Text>
+            <Text style={homeStyles.itemCardText2}>Education</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 1500.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/shopping.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>New Shoes</Text>
+            <Text style={homeStyles.itemCardText2}>Shopping</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 15000.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/movie.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Movie</Text>
+            <Text style={homeStyles.itemCardText2}>Entertainment</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 5000.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/healthcare.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Medicine</Text>
+            <Text style={homeStyles.itemCardText2}>Healthcare</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 1000.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/vehicles.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Uber</Text>
+            <Text style={homeStyles.itemCardText2}>Transport</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 4000.00</Text>
+          </View>
+        </View>
+
+        <View style={homeStyles.itemCard}>
+          <View style={homeStyles.itemCard1}>
+            <Image
+              source={require("../assets/project-images/transaction.png")}
+              style={homeStyles.image6}
+            />
+          </View>
+          <View style={homeStyles.itemCard2}>
+            <Text style={homeStyles.itemCardText1}>Water Bill</Text>
+            <Text style={homeStyles.itemCardText2}>Bills</Text>
+          </View>
+          <View style={homeStyles.itemCard3}>
+            <Text style={homeStyles.itemCardText3}>- Rs. 2500.00</Text>
+          </View>
+        </View>
       </ScrollView>
 
       <View style={homeStyles.bottomNavBar}>
