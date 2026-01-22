@@ -191,7 +191,7 @@ export default function HomePage() {
             />
           </View>
           <View style={homeStyles.itemCard2}>
-            <Text style={homeStyles.itemCardText1}>Grocery Shopping</Text>
+            <Text style={homeStyles.itemCardText1}>Burgers</Text>
             <Text style={homeStyles.itemCardText2}>Foods</Text>
           </View>
           <View style={homeStyles.itemCard3}>
