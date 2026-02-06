@@ -1,6 +1,7 @@
 import { authStyles } from "@/styles/authStyles";
 import { homeStyles } from "@/styles/homeStyles";
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import {
   Animated,
@@ -297,18 +298,24 @@ export default function HomePage() {
       </ScrollView>
 
       <View style={homeStyles.bottomNavBar}>
-        <Image
-          source={require("../assets/project-images/home.png")}
-          style={homeStyles.image3}
-        />
-        <Image
-          source={require("../assets/project-images/graph.png")}
-          style={homeStyles.image3}
-        />
-        <Image
-          source={require("../assets/project-images/list.png")}
-          style={homeStyles.image3}
-        />
+        <Pressable>
+          <Image
+            source={require("../assets/project-images/home.png")}
+            style={homeStyles.image3}
+          />
+        </Pressable>
+        <Pressable onPress={() => router.push("/analytics")}>
+          <Image
+            source={require("../assets/project-images/graph.png")}
+            style={homeStyles.image3}
+          />
+        </Pressable>
+        <Pressable>
+          <Image
+            source={require("../assets/project-images/list.png")}
+            style={homeStyles.image3}
+          />
+        </Pressable>
       </View>
     </SafeAreaView>
   );
