@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 export const transactionStyles = StyleSheet.create({
     searchBar:{
-        flex:1,
         padding:10,
     },
     searchTextInput:{
@@ -14,4 +13,12 @@ export const transactionStyles = StyleSheet.create({
         fontFamily:"PoppinsRegular",
         fontSize:14,
     },
+    timeFrameView:{
+        padding:10,
+    },
+    timeFrameText: {
+    fontFamily: "PoppinsRegular",
+    fontSize: 14,
+    padding:10,
+  },
 });
