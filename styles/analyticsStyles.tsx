@@ -63,6 +63,10 @@ export const analyticsStyles = StyleSheet.create({
     fontFamily: "PoppinsBold",
     fontSize: 24,
   },
+  spendFrameText3: {
+    fontFamily: "PoppinsBold",
+    fontSize: 18,
+  },
   pieChartView: {
     borderRadius: 10,
     borderWidth: 1,
@@ -133,5 +137,17 @@ export const analyticsStyles = StyleSheet.create({
   categoriesView4: {
     flex: 1,
     alignItems: "flex-end",
+  },
+  spendFrameView2: {
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#5693adff",
+    margin: 5,
+    padding: 20,
+  },
+   itemCardText3: {
+    fontFamily: "PoppinsBold",
+    fontSize: 14,
+    color: "rgb(204, 78, 78)",
   },
 });

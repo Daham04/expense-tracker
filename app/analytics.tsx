@@ -101,7 +101,9 @@ export default function AnalyticsPage() {
               <Text style={analyticsStyles.categoriesViewText3}>Foods</Text>
             </View>
             <View style={analyticsStyles.categoriesView4}>
-              <Text style={analyticsStyles.categoriesViewText3}>Rs. 3222.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>
+                Rs. 3222.00
+              </Text>
               <Text style={analyticsStyles.categoriesViewText3}>32%</Text>
             </View>
           </View>
@@ -112,7 +114,9 @@ export default function AnalyticsPage() {
               <Text style={analyticsStyles.categoriesViewText3}>Transport</Text>
             </View>
             <View style={analyticsStyles.categoriesView4}>
-              <Text style={analyticsStyles.categoriesViewText3}>Rs. 2022.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>
+                Rs. 2022.00
+              </Text>
               <Text style={analyticsStyles.categoriesViewText3}>22%</Text>
             </View>
           </View>
@@ -123,7 +127,9 @@ export default function AnalyticsPage() {
               <Text style={analyticsStyles.categoriesViewText3}>Shopping</Text>
             </View>
             <View style={analyticsStyles.categoriesView4}>
-              <Text style={analyticsStyles.categoriesViewText3}>Rs. 3022.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>
+                Rs. 3022.00
+              </Text>
               <Text style={analyticsStyles.categoriesViewText3}>28%</Text>
             </View>
           </View>
@@ -134,18 +140,53 @@ export default function AnalyticsPage() {
               <Text style={analyticsStyles.categoriesViewText3}>Others</Text>
             </View>
             <View style={analyticsStyles.categoriesView4}>
-              <Text style={analyticsStyles.categoriesViewText3}>Rs. 1922.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>
+                Rs. 1922.00
+              </Text>
               <Text style={analyticsStyles.categoriesViewText3}>18%</Text>
             </View>
           </View>
-
         </View>
 
-         <View style={analyticsStyles.spendFrameView}>
-          <Text style={analyticsStyles.spendFrameText1}>Total Spent</Text>
-          <Text style={analyticsStyles.spendFrameText2}>Rs. 2500.00</Text>
+        <View style={analyticsStyles.spendFrameView2}>
+          <Text style={analyticsStyles.spendFrameText3}>Top Categories</Text>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={analyticsStyles.categoriesView3}>
+              <Text style={analyticsStyles.spendFrameText1}>1. </Text>
+              <Text style={analyticsStyles.spendFrameText1}>Foods</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.itemCardText3}>- Rs. 3500.00</Text>
+            </View>
+          </View>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={analyticsStyles.categoriesView3}>
+              <Text style={analyticsStyles.spendFrameText1}>2. </Text>
+              <Text style={analyticsStyles.spendFrameText1}>Transport</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.itemCardText3}>- Rs. 6540.00</Text>
+            </View>
+          </View>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={analyticsStyles.categoriesView3}>
+              <Text style={analyticsStyles.spendFrameText1}>3. </Text>
+              <Text style={analyticsStyles.spendFrameText1}>Shopping</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.itemCardText3}>- Rs. 2540.00</Text>
+            </View>
+          </View>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={analyticsStyles.categoriesView3}>
+              <Text style={analyticsStyles.spendFrameText1}>4. </Text>
+              <Text style={analyticsStyles.spendFrameText1}>Others</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.itemCardText3}>- Rs. 4540.00</Text>
+            </View>
+          </View>
         </View>
-        
       </ScrollView>
 
       <View style={homeStyles.bottomNavBar}>
