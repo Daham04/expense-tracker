@@ -49,6 +49,7 @@ export const homeStyles = StyleSheet.create({
   image2: {
     width: 30,
     height: 30,
+    
   },
   image3: {
     width: 25,
@@ -69,6 +70,12 @@ export const homeStyles = StyleSheet.create({
   image6: {
     width: 35,
     height: 35,
+  },
+   image7: {
+    width: 30,
+    height: 30,
+    alignSelf: "flex-end",
+    
   },
   balanceCard: {
     borderRadius: 20,
