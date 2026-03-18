@@ -33,6 +33,15 @@ export const analyticsStyles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  timeFrameView4: {
+    flex: 1,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#7795c2",
+    margin: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   timeFrameText: {
     fontFamily: "PoppinsRegular",
     fontSize: 14,
@@ -83,6 +92,11 @@ export const analyticsStyles = StyleSheet.create({
     fontSize: 12,
     marginHorizontal: 10,
   },
+  categoriesViewText3: {
+    fontFamily: "PoppinsBold",
+    fontSize: 12,
+    marginHorizontal: 10,
+  },
   categoriesView2: {
     flexDirection: "row",
   },
@@ -109,5 +123,15 @@ export const analyticsStyles = StyleSheet.create({
     height: 15,
     backgroundColor: "#213448",
     borderRadius: 5,
+  },
+  categoriesView3: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    
+  },
+  categoriesView4: {
+    flex: 1,
+    alignItems: "flex-end",
   },
 });

@@ -30,6 +30,9 @@ export default function AnalyticsPage() {
       </View>
 
       <View style={analyticsStyles.timeFrameView}>
+        <View style={analyticsStyles.timeFrameView4}>
+          <Text style={analyticsStyles.timeFrameText}>Daily</Text>
+        </View>
         <View style={analyticsStyles.timeFrameView1}>
           <Text style={analyticsStyles.timeFrameText}>Week</Text>
         </View>
@@ -91,7 +94,58 @@ export default function AnalyticsPage() {
               </View>
             </View>
           </View>
+
+          <View style={analyticsStyles.categoriesView}>
+            <View style={analyticsStyles.categoriesView3}>
+              <View style={analyticsStyles.categoriesColor1}></View>
+              <Text style={analyticsStyles.categoriesViewText3}>Foods</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.categoriesViewText3}>Rs. 3222.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>32%</Text>
+            </View>
+          </View>
+
+          <View style={analyticsStyles.categoriesView}>
+            <View style={analyticsStyles.categoriesView3}>
+              <View style={analyticsStyles.categoriesColor2}></View>
+              <Text style={analyticsStyles.categoriesViewText3}>Transport</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.categoriesViewText3}>Rs. 2022.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>22%</Text>
+            </View>
+          </View>
+
+          <View style={analyticsStyles.categoriesView}>
+            <View style={analyticsStyles.categoriesView3}>
+              <View style={analyticsStyles.categoriesColor3}></View>
+              <Text style={analyticsStyles.categoriesViewText3}>Shopping</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.categoriesViewText3}>Rs. 3022.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>28%</Text>
+            </View>
+          </View>
+
+          <View style={analyticsStyles.categoriesView}>
+            <View style={analyticsStyles.categoriesView3}>
+              <View style={analyticsStyles.categoriesColor4}></View>
+              <Text style={analyticsStyles.categoriesViewText3}>Others</Text>
+            </View>
+            <View style={analyticsStyles.categoriesView4}>
+              <Text style={analyticsStyles.categoriesViewText3}>Rs. 1922.00</Text>
+              <Text style={analyticsStyles.categoriesViewText3}>18%</Text>
+            </View>
+          </View>
+
         </View>
+
+         <View style={analyticsStyles.spendFrameView}>
+          <Text style={analyticsStyles.spendFrameText1}>Total Spent</Text>
+          <Text style={analyticsStyles.spendFrameText2}>Rs. 2500.00</Text>
+        </View>
+        
       </ScrollView>
 
       <View style={homeStyles.bottomNavBar}>
