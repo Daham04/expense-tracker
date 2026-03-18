@@ -200,7 +200,7 @@ export const homeStyles = StyleSheet.create({
     flexDirection: "row",
     marginHorizontal: H_PADDING,
     marginVertical: 5,
-    borderColor: "rgb(194, 190, 183)",
+    borderColor: "#c2beb7",
     borderWidth: 1,
     borderRadius: 15,
   },

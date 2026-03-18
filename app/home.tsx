@@ -310,7 +310,7 @@ export default function HomePage() {
             style={homeStyles.image3}
           />
         </Pressable>
-        <Pressable>
+        <Pressable onPress={() => router.push("/transaction")}>
           <Image
             source={require("../assets/project-images/list.png")}
             style={homeStyles.image3}
