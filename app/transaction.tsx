@@ -14,7 +14,6 @@ import { authStyles } from "../styles/authStyles";
 import { router } from "expo-router";
 import { homeStyles } from "@/styles/homeStyles";
 import { transactionStyles } from "@/styles/transactionStyles";
-import { analyticsStyles } from "@/styles/analyticsStyles";
 
 export default function HomePage() {
   return (
