@@ -12,6 +12,8 @@ import {
   ScrollView,
   Text,
   View,
+  Modal,
+  TextInput,
 } from "react-native";
 import { BarChart } from "react-native-chart-kit";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -27,6 +29,10 @@ export default function HomePage() {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
     datasets: [{ data: [0, 0, 0, 0, 0, 0] }],
   });
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [amount, setAmount] = useState("");
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     Animated.timing(animatedValue, {
@@ -165,7 +171,7 @@ export default function HomePage() {
         </View>
 
         <View style={homeStyles.cardView}>
-          <Pressable style={authStyles.btn}>
+          <Pressable style={authStyles.btn} onPress={() => setModalVisible(true)}>
             <LinearGradient
               colors={["#3291B6", "#913b94"]}
               style={authStyles.btnInner}
@@ -296,6 +302,127 @@ export default function HomePage() {
           </View>
         </View>
       </ScrollView>
+
+      <Modal visible={modalVisible} transparent={true} animationType="slide">
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0,0,0,0.5)",
+          }}
+        >
+          <View
+            style={{
+              width: "85%",
+              backgroundColor: "#fff",
+              borderRadius: 15,
+              padding: 20,
+            }}
+          >
+            <Text
+              style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}
+            >
+              Add Expense
+            </Text>
+
+            <View style={
+              {height: 100, backgroundColor: "#f31a1a", marginBottom: 20}
+            }>
+              <View style={
+              {height: 50, backgroundColor: "#2a8032",}
+            }>
+
+            </View>
+             <View style={
+              {height: 50, backgroundColor: "#2b05ff",}
+            }>
+
+            </View>
+
+            </View>
+
+            {/* Category Input */}
+            <TextInput
+              placeholder="Enter Category"
+              value={category}
+              onChangeText={setCategory}
+              style={{
+                borderWidth: 1,
+                borderColor: "#ccc",
+                borderRadius: 10,
+                padding: 10,
+                marginBottom: 10,
+              }}
+            />
+
+            {/* Amount Input */}
+            <TextInput
+              placeholder="Enter Amount"
+              keyboardType="numeric"
+              value={amount}
+              onChangeText={setAmount}
+              style={{
+                borderWidth: 1,
+                borderColor: "#ccc",
+                borderRadius: 10,
+                padding: 10,
+                marginBottom: 10,
+              }}
+            />
+
+            {/* Amount Input */}
+            <TextInput
+              placeholder="Enter Amount"
+              keyboardType="numeric"
+              value={amount}
+              onChangeText={setAmount}
+              style={{
+                borderWidth: 1,
+                borderColor: "#ccc",
+                borderRadius: 10,
+                padding: 10,
+                marginBottom: 20,
+              }}
+            />
+
+
+            {/* Buttons */}
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Pressable
+                onPress={() => setModalVisible(false)}
+                style={{
+                  padding: 10,
+                  backgroundColor: "#ccc",
+                  borderRadius: 10,
+                }}
+              >
+                <Text>Cancel</Text>
+              </Pressable>
+
+              <Pressable
+                onPress={() => {
+                  console.log("Category:", category);
+                  console.log("Amount:", amount);
+
+                  setModalVisible(false);
+                  setCategory("");
+                  setAmount("");
+                }}
+                style={{
+                  padding: 10,
+                  backgroundColor: "#3291B6",
+                  borderRadius: 10,
+                }}
+              >
+                <Text style={{ color: "#fff" }}>Add</Text>
+              </Pressable>
+            </View>
+          </View>
+        </View>
+      </Modal>
 
       <View style={homeStyles.bottomNavBar}>
         <Pressable>
